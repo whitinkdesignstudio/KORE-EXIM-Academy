@@ -1,0 +1,3878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kore EXIM Academy – Learn Exports From Real Exporters</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Nunito:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Tessan';
+      src: url('PARACHUTESSANS.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    span,
+    div,
+    li,
+    td,
+    th,
+    input,
+    button,
+    textarea,
+    select,
+    nav,
+    footer,
+    .sec-title,
+    .logo-words,
+    .mega-link,
+    .drop li a,
+    .nav-cta,
+    .btn-g,
+    .btn-o,
+    .fsub,
+    .ff input {
+      font-family: 'Poppins', sans-serif !important;
+    }
+
+
+
+
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    span,
+    div,
+    li,
+    td,
+    th,
+    input,
+    button,
+    textarea,
+    select,
+    .container,
+    nav,
+    footer,
+    .logo-words,
+    .hero-text,
+    .sec-title,
+    .mega-link,
+    .drop li a,
+    .nav-cta,
+    .btn-g,
+    .btn-o,
+    .fsub,
+    .ff input {}
+
+    :root {
+      --green: #1a7a3c;
+      --gd: #145e2e;
+      --gl: #22a050;
+      --blue: #0a3d8f;
+      --bd: #07306f;
+      --dark: #0d1b2a;
+      --bg: #f4f7f6;
+      --gold: #f5a623;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      color: #2d3748;
+      overflow-x: hidden
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Poppins', sans-serif
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px
+    }
+
+    /* TOPBAR */
+    .topbar {
+      background: var(--bd);
+      color: #fff;
+      font-size: 12.5px;
+      padding: 7px 0
+    }
+
+    .topbar .ti {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px
+    }
+
+    .topbar a {
+      color: #b8d4f0;
+      text-decoration: none;
+      margin-left: 14px
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: #fff;
+      box-shadow: 0 2px 14px rgba(0, 0, 0, .08);
+      position: sticky;
+      top: 0;
+      z-index: 9000
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 11px 0
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      text-decoration: none
+    }
+
+    .logo-img {
+      height: 54px;
+      width: auto;
+      display: block
+    }
+
+    .logo-words {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+      font-size: 17px;
+      line-height: 1.2
+    }
+
+    .logo-words .g {
+      color: var(--green)
+    }
+
+    .logo-words .b {
+      color: var(--blue)
+    }
+
+    .logo-words small {
+      display: block;
+      font-size: 10px;
+      font-weight: 500;
+      color: #888;
+      letter-spacing: .3px
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1px;
+      align-items: center;
+      position: relative
+    }
+
+    nav ul li {
+      position: relative
+    }
+
+    nav ul li>a {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--dark);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: .2s;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap
+    }
+
+    nav ul li>a:hover,
+    nav ul li>a.active {
+      color: var(--green);
+      background: #edf7f2
+    }
+
+    nav ul li>a .arr {
+      font-size: 10px;
+      transition: transform .25s;
+      display: inline-block
+    }
+
+    nav ul li:hover>a .arr {
+      transform: rotate(180deg)
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--green), var(--gd)) !important;
+      color: #fff !important;
+      border-radius: 7px !important;
+      padding: 9px 18px !important
+    }
+
+    /* STANDARD DROPDOWN */
+    .drop {
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 0;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 12px 50px rgba(0, 0, 0, .13);
+      border: 1px solid #eee;
+      min-width: 220px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(8px);
+      transition: opacity .22s, transform .22s, visibility .22s;
+      z-index: 9100;
+      overflow: hidden;
+    }
+
+    nav ul li:hover>.drop {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0)
+    }
+
+    .drop li {
+      display: block
+    }
+
+    .drop li a {
+      padding: 10px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 0;
+      border-bottom: 1px solid #f5f5f5;
+      background: none !important;
+      transition: background .2s, color .2s
+    }
+
+    .drop li a:hover {
+      background: #edf7f2 !important;
+      color: var(--green)
+    }
+
+    .drop li a .di {
+      font-size: 15px
+    }
+
+    /* COURSES nested */
+    .drop-courses {
+      min-width: 260px
+    }
+
+    .drop-courses li {
+      position: relative
+    }
+
+    .drop-courses li>a {
+      justify-content: space-between;
+      font-weight: 700;
+      color: var(--dark)
+    }
+
+    .drop-courses li>a .arr2 {
+      font-size: 10px;
+      transition: transform .25s
+    }
+
+    .drop-courses li:hover>a {
+      background: #edf7f2 !important;
+      color: var(--green)
+    }
+
+    .drop-courses li:hover>a .arr2 {
+      transform: rotate(-90deg)
+    }
+
+    .drop-sub {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 12px 50px rgba(0, 0, 0, .13);
+      border: 1px solid #eee;
+      min-width: 190px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(8px);
+      transition: opacity .22s, transform .22s, visibility .22s;
+      z-index: 9200;
+      overflow: hidden;
+    }
+
+    .drop-courses li:hover>.drop-sub {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0)
+    }
+
+    .drop-sub li a {
+      padding: 9px 16px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid #f5f5f5;
+      background: none !important
+    }
+
+    .drop-sub li a:hover {
+      background: #edf7f2 !important;
+      color: var(--green)
+    }
+
+    .drop-sub li a .badge-free {
+      background: #22a050;
+      color: #fff;
+      font-size: 9px;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 8px;
+      margin-left: auto
+    }
+
+    .drop-sub li a .badge-basic {
+      background: #0a3d8f;
+      color: #fff;
+      font-size: 9px;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 8px;
+      margin-left: auto
+    }
+
+    .drop-sub li a .badge-master {
+      background: linear-gradient(135deg, #f5a623, #c47a0a);
+      color: #fff;
+      font-size: 9px;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 8px;
+      margin-left: auto
+    }
+
+    /* MEGA DROPDOWN */
+    .mega-parent {
+      position: static !important
+    }
+
+    .mega-drop {
+      position: fixed;
+      top: auto;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background: #fff;
+      box-shadow: 0 16px 60px rgba(0, 0, 0, .14);
+      border-top: 3px solid var(--green);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(8px);
+      transition: opacity .25s, transform .25s, visibility .25s;
+      z-index: 9050;
+      max-height: 82vh;
+      overflow-y: auto;
+    }
+
+    .mega-parent:hover>.mega-drop {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0)
+    }
+
+    .mega-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 26px 20px 30px;
+    }
+
+    .mega-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .mega-top h4 {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    .mega-top h4 span {
+      background: var(--green);
+      color: #fff;
+      font-size: 10px;
+      padding: 3px 10px;
+      border-radius: 10px
+    }
+
+    .mega-top small {
+      font-size: 12px;
+      color: #999
+    }
+
+    .mega-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 4px;
+    }
+
+    .mega-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #444;
+      font-size: 12.5px;
+      font-weight: 600;
+      transition: background .18s, color .18s;
+      border: 1px solid transparent;
+      line-height: 1.3;
+    }
+
+    .mega-link:hover {
+      background: #edf7f2;
+      color: var(--green);
+      border-color: #c6e8d5
+    }
+
+    .mega-link .ml {
+      font-size: 15px;
+      flex-shrink: 0
+    }
+
+    /* HAMBURGER */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 3px;
+      background: var(--dark);
+      border-radius: 2px
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #060f1e 0%, #0c2560 55%, #061a0e 100%);
+      position: relative;
+      overflow: hidden;
+      min-height: 580px;
+      display: flex;
+      align-items: stretch;
+    }
+
+    /* Faint world map + shipping trade lines */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 20% 50%, rgba(26, 122, 60, .07) 0%, transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(10, 61, 143, .08) 0%, transparent 35%),
+        radial-gradient(circle at 60% 70%, rgba(245, 166, 35, .05) 0%, transparent 30%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Trade route lines SVG overlay */
+    .hero-trade-lines {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.18;
+    }
+
+    .hero-blob {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      animation: blobAnim ease-in-out infinite alternate;
+      z-index: 0
+    }
+
+    @keyframes blobAnim {
+      0% {
+        transform: scale(1)
+      }
+
+      100% {
+        transform: scale(1.12) translate(12px, -12px)
+      }
+    }
+
+    .hero-outer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      min-height: 580px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-text {
+      padding: 70px 48px 70px calc((100vw - 1200px)/2 + 20px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: transparent;
+    }
+
+    @media(max-width:1240px) {
+      .hero-text {
+        padding: 60px 40px 60px 40px
+      }
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: #000;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 6px 18px;
+      border-radius: 20px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      animation: badgePop 2.2s ease-in-out infinite;
+      align-self: flex-start;
+    }
+
+    @keyframes badgePop {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(245, 166, 35, .4)
+      }
+
+      50% {
+        box-shadow: 0 0 0 10px rgba(245, 166, 35, 0)
+      }
+    }
+
+    .hero-text h1 {
+      font-size: clamp(28px, 3.5vw, 52px);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.08;
+      margin-bottom: 18px
+    }
+
+    .hero-text h1 .gold {
+      color: var(--gold)
+    }
+
+    .hero-text h1 .grn {
+      color: #5edda0
+    }
+
+    .hero-text>p {
+      font-size: 15.5px;
+      color: rgba(255, 255, 255, .78);
+      line-height: 1.82;
+      margin-bottom: 28px;
+      max-width: 460px
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 28px
+    }
+
+    .btn-g {
+      background: linear-gradient(135deg, var(--green), var(--gd));
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 14px;
+      text-decoration: none;
+      transition: .3s;
+      box-shadow: 0 6px 20px rgba(26, 122, 60, .4)
+    }
+
+    .btn-g:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(26, 122, 60, .5)
+    }
+
+    .btn-o {
+      border: 2px solid rgba(255, 255, 255, .4);
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      transition: .3s
+    }
+
+    .btn-o:hover {
+      background: rgba(255, 255, 255, .09);
+      border-color: #fff
+    }
+
+    .hero-mini-stats {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      margin-top: 4px
+    }
+
+    .hms {
+      text-align: center
+    }
+
+    .hms strong {
+      display: block;
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1
+    }
+
+    .hms span {
+      font-size: 11px;
+      color: rgba(255, 255, 255, .55);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .5px
+    }
+
+    .hero-phone {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 16px
+    }
+
+    .hero-phone span {
+      font-size: 13px;
+      color: rgba(255, 255, 255, .5)
+    }
+
+    .hero-phone a {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--gold);
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif
+    }
+
+    .hero-phone a:hover {
+      color: #fff
+    }
+
+    .hero-img-side {
+      position: relative;
+      display: flex;
+      align-items: stretch;
+      overflow: hidden;
+      border-left: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .hero-img-inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: rgba(255, 255, 255, .02);
+    }
+
+    .hero-shimmer {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden
+    }
+
+    .hero-shimmer::before,
+    .hero-shimmer::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .06), transparent);
+      animation: shimmerLine 3.5s linear infinite;
+    }
+
+    .hero-shimmer::before {
+      top: 30%;
+      animation-delay: 0s
+    }
+
+    .hero-shimmer::after {
+      top: 65%;
+      animation-delay: 1.75s
+    }
+
+    @keyframes shimmerLine {
+      0% {
+        transform: translateX(-100%)
+      }
+
+      100% {
+        transform: translateX(100%)
+      }
+    }
+
+    /* Hero banner image */
+    .hero-banner-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+    }
+
+    /* Hero placeholder - shown when no image src set */
+    .hero-img-placeholder {
+      width: calc(100% - 60px);
+      height: calc(100% - 60px);
+      min-height: 440px;
+      margin: 30px;
+      border: 2px dashed rgba(255, 255, 255, .2);
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      text-align: center;
+      padding: 30px;
+      background: rgba(255, 255, 255, .03);
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-img-placeholder .upi {
+      font-size: 52px;
+      opacity: .35;
+      line-height: 1
+    }
+
+    .hero-img-placeholder h3 {
+      color: rgba(255, 255, 255, .45);
+      font-size: 16px;
+      font-weight: 700
+    }
+
+    .hero-img-placeholder p {
+      color: rgba(255, 255, 255, .3);
+      font-size: 12px;
+      line-height: 1.6
+    }
+
+    .hcorn {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      pointer-events: none;
+      z-index: 4
+    }
+
+    .hcorn.tl {
+      top: 16px;
+      left: 16px;
+      border-top: 2px solid rgba(26, 122, 60, .45);
+      border-left: 2px solid rgba(26, 122, 60, .45)
+    }
+
+    .hcorn.br {
+      bottom: 16px;
+      right: 16px;
+      border-bottom: 2px solid rgba(245, 166, 35, .35);
+      border-right: 2px solid rgba(245, 166, 35, .35)
+    }
+
+    .hero-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 5
+    }
+
+    .hdot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .3);
+      transition: .2s;
+      cursor: pointer
+    }
+
+    .hdot.on {
+      background: var(--gold);
+      width: 22px;
+      border-radius: 4px
+    }
+
+    /* FOUNDERS */
+    .founders-sec {
+      padding: 88px 0;
+      background: #fff
+    }
+
+    .founders-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px
+    }
+
+    .fc {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 6px 44px rgba(0, 0, 0, .09);
+      overflow: hidden;
+      transition: .3s
+    }
+
+    .fc:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 56px rgba(0, 0, 0, .13)
+    }
+
+    .fc-top {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--bd) 100%);
+      padding: 28px 28px 0;
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      min-height: 180px;
+      position: relative
+    }
+
+    .fc-photo {
+      width: 120px;
+      height: 150px;
+      border-radius: 12px 12px 0 0;
+      object-fit: cover;
+      border: 3px solid rgba(255, 255, 255, .15);
+      display: block;
+      flex-shrink: 0;
+    }
+
+    /* Founder photo placeholder */
+    .fc-photo-ph {
+      width: 120px;
+      height: 150px;
+      border-radius: 12px 12px 0 0;
+      background: rgba(255, 255, 255, .07);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: 3px dashed rgba(255, 255, 255, .25);
+      flex-shrink: 0;
+    }
+
+    .fc-photo-ph .ph-icon {
+      font-size: 36px;
+      opacity: .5
+    }
+
+    .fc-photo-ph span {
+      color: rgba(255, 255, 255, .45);
+      font-size: 11px;
+      font-weight: 600;
+      text-align: center;
+      line-height: 1.4
+    }
+
+    .fc-hinfo {
+      padding-bottom: 18px
+    }
+
+    .fc-hinfo h3 {
+      font-size: 21px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 4px
+    }
+
+    .fc-hinfo .des {
+      font-size: 13px;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 10px
+    }
+
+    .fc-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px
+    }
+
+    .fc-tags span {
+      background: rgba(255, 255, 255, .1);
+      color: rgba(255, 255, 255, .82);
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-weight: 600
+    }
+
+    .fc-body {
+      padding: 24px 28px 28px
+    }
+
+    .fc-body p {
+      color: #555;
+      font-size: 13.5px;
+      line-height: 1.82;
+      margin-bottom: 12px
+    }
+
+    .fc-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 16px
+    }
+
+    .fst {
+      background: var(--bg);
+      border-radius: 10px;
+      padding: 13px;
+      text-align: center;
+      border-bottom: 3px solid var(--green)
+    }
+
+    .fst strong {
+      display: block;
+      font-size: 19px;
+      font-weight: 900;
+      color: var(--green);
+      font-family: 'Poppins', sans-serif
+    }
+
+    .fst span {
+      font-size: 11px;
+      color: #888;
+      font-weight: 600
+    }
+
+    /* ABOUT */
+    .about-sec {
+      padding: 90px 0;
+      background: linear-gradient(135deg, #060f1e 0%, #0b225a 50%, #061812 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ga-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, .04);
+      pointer-events: none
+    }
+
+    .ga-ring.r1 {
+      width: 700px;
+      height: 700px;
+      top: 50%;
+      right: -220px;
+      margin-top: -350px;
+      animation: gaRot 40s linear infinite
+    }
+
+    .ga-ring.r2 {
+      width: 520px;
+      height: 520px;
+      top: 50%;
+      right: -130px;
+      margin-top: -260px;
+      border-color: rgba(26, 122, 60, .08);
+      animation: gaRot 28s linear infinite reverse
+    }
+
+    .ga-ring.r3 {
+      width: 340px;
+      height: 340px;
+      top: 50%;
+      right: -40px;
+      margin-top: -170px;
+      animation: gaRot 18s linear infinite
+    }
+
+    @keyframes gaRot {
+      from {
+        transform: rotate(0)
+      }
+
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    .fdot {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      animation: fdA ease-in-out infinite alternate
+    }
+
+    @keyframes fdA {
+      0% {
+        transform: translateY(0);
+        opacity: .3
+      }
+
+      100% {
+        transform: translateY(-16px);
+        opacity: .8
+      }
+    }
+
+    .about-sec-title {
+      text-align: center;
+      margin-bottom: 50px;
+      position: relative;
+      z-index: 2
+    }
+
+    .about-sec-title .sub {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 12px
+    }
+
+    .about-sec-title h2 {
+      font-size: clamp(26px, 3.8vw, 44px);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 16px
+    }
+
+    .about-sec-title h2 .gold {
+      color: var(--gold)
+    }
+
+    .about-sec-title h2 .grn {
+      color: #5edda0
+    }
+
+    .about-sec-title>p {
+      color: rgba(255, 255, 255, .68);
+      font-size: 15px;
+      line-height: 1.8;
+      max-width: 700px;
+      margin: 0 auto 28px
+    }
+
+    .about-stat-pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 0
+    }
+
+    .asp {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, .07);
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 50px;
+      padding: 10px 20px;
+      transition: .3s;
+    }
+
+    .asp:hover {
+      background: rgba(26, 122, 60, .2);
+      border-color: rgba(26, 122, 60, .4);
+      transform: translateY(-2px)
+    }
+
+    .asp strong {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: 900;
+      color: var(--gold)
+    }
+
+    .asp span {
+      font-size: 12px;
+      color: rgba(255, 255, 255, .65);
+      font-weight: 600
+    }
+
+    .about-boxes-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 50px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* About image boxes */
+    .abox {
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px dashed rgba(255, 255, 255, .15);
+      background: rgba(255, 255, 255, .04);
+      transition: .4s;
+    }
+
+    .abox::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: conic-gradient(from 0deg, transparent, rgba(26, 122, 60, .06) 60deg, transparent 120deg);
+      animation: abSpin 7s linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes abSpin {
+      from {
+        transform: rotate(0)
+      }
+
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    .abox:hover {
+      background: rgba(255, 255, 255, .08);
+      border-color: rgba(26, 122, 60, .5);
+      transform: translateY(-4px)
+    }
+
+    .abox img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      inset: 0;
+      border-radius: 14px;
+      z-index: 2;
+    }
+
+    /* When no image src - show placeholder icon */
+    .abox-ph {
+      font-size: 34px;
+      opacity: .35;
+      position: relative;
+      z-index: 1;
+    }
+
+    .abox-ph-label {
+      color: rgba(255, 255, 255, .3);
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      position: relative;
+      z-index: 1;
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    .abox.pulse-box {
+      border-color: rgba(26, 122, 60, .45);
+      background: rgba(26, 122, 60, .1);
+      animation: abPulse 2.5s ease-in-out infinite
+    }
+
+    @keyframes abPulse {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(26, 122, 60, .25)
+      }
+
+      50% {
+        box-shadow: 0 0 0 8px rgba(26, 122, 60, 0)
+      }
+    }
+
+    .ticker-box {
+      background: rgba(255, 255, 255, .05);
+      border-radius: 10px;
+      padding: 12px 0;
+      overflow: hidden;
+      margin-top: 20px;
+      position: relative;
+      z-index: 2
+    }
+
+    .ticker-inner {
+      display: flex;
+      gap: 32px;
+      white-space: nowrap;
+      animation: tickMove 22s linear infinite
+    }
+
+    .ticker-inner span {
+      color: rgba(255, 255, 255, .48);
+      font-size: 12px;
+      font-weight: 600;
+      flex-shrink: 0
+    }
+
+    .ticker-inner span b {
+      color: var(--gold)
+    }
+
+    @keyframes tickMove {
+      from {
+        transform: translateX(0)
+      }
+
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    /* STATS */
+    .stats-sec {
+      padding: 78px 0;
+      background: var(--bg)
+    }
+
+    .stats-box {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 10px 50px rgba(0, 0, 0, .09);
+      overflow: hidden
+    }
+
+    .stats-head {
+      background: linear-gradient(135deg, var(--dark), var(--bd));
+      padding: 18px 30px;
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .stats-head h3 {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      margin: 0
+    }
+
+    .stats-head small {
+      color: rgba(255, 255, 255, .5);
+      font-size: 13px
+    }
+
+    .stats-main {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr)
+    }
+
+    .sc {
+      padding: 42px 18px;
+      text-align: center;
+      border-right: 1px solid #f0f0f0;
+      transition: .3s
+    }
+
+    .sc:last-child {
+      border-right: none
+    }
+
+    .sc:hover {
+      background: #fafffe
+    }
+
+    .sc:nth-child(2) {
+      background: linear-gradient(135deg, var(--dark), var(--bd))
+    }
+
+    .sc:nth-child(4) {
+      background: linear-gradient(135deg, var(--gd), var(--gl))
+    }
+
+    .sc:nth-child(2) .sn,
+    .sc:nth-child(4) .sn,
+    .sc:nth-child(2) .sl,
+    .sc:nth-child(4) .sl {
+      color: #fff
+    }
+
+    .sc:nth-child(2) .sl,
+    .sc:nth-child(4) .sl {
+      color: rgba(255, 255, 255, .7)
+    }
+
+    .sci {
+      font-size: 26px;
+      margin-bottom: 10px;
+      display: block
+    }
+
+    .sn {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(32px, 4.5vw, 52px);
+      font-weight: 900;
+      color: var(--green);
+      display: block;
+      line-height: 1
+    }
+
+    .sl {
+      font-size: 12.5px;
+      color: #666;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      margin-top: 8px;
+      display: block
+    }
+
+    .stats-sub {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid #f0f0f0
+    }
+
+    .sm {
+      padding: 24px;
+      text-align: center;
+      border-right: 1px solid #f0f0f0;
+      display: flex;
+      align-items: center;
+      gap: 13px
+    }
+
+    .sm:last-child {
+      border-right: none
+    }
+
+    .sm-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #e8f5ee, #d0ebda);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 21px;
+      flex-shrink: 0
+    }
+
+    .sm strong {
+      display: block;
+      font-size: 21px;
+      font-weight: 900;
+      color: var(--blue);
+      font-family: 'Poppins', sans-serif
+    }
+
+    .sm span {
+      font-size: 11.5px;
+      color: #888;
+      font-weight: 600
+    }
+
+
+
+    .banner-img-wrap {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .banner-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+
+
+
+    /* WHY */
+    .why-sec {
+      padding: 88px 0;
+      background: #fff
+    }
+
+    .why-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: start;
+      margin-bottom: 44px
+    }
+
+    .why-left span.sub2 {
+      display: inline-block;
+      color: var(--green);
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      margin-bottom: 10px
+    }
+
+    .why-left h2 {
+      font-size: clamp(24px, 3.5vw, 38px);
+      font-weight: 900;
+      color: var(--dark);
+      line-height: 1.2;
+      margin-bottom: 12px
+    }
+
+    .why-left h2 span {
+      color: var(--green)
+    }
+
+    .why-left p {
+      color: #666;
+      font-size: 15px;
+      line-height: 1.8
+    }
+
+    .why-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 11px
+    }
+
+    .wc {
+      background: var(--bg);
+      border-radius: 11px;
+      padding: 15px 18px;
+      display: flex;
+      align-items: center;
+      gap: 13px
+    }
+
+    .wc:nth-child(1) {
+      border-left: 4px solid var(--green)
+    }
+
+    .wc:nth-child(2) {
+      border-left: 4px solid var(--blue)
+    }
+
+    .wc:nth-child(3) {
+      border-left: 4px solid var(--gold)
+    }
+
+    .wc .we {
+      font-size: 22px
+    }
+
+    .wc strong {
+      font-size: 14px;
+      color: var(--dark);
+      display: block
+    }
+
+    .wc small {
+      font-size: 12.5px;
+      color: #888
+    }
+
+    .ct {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 26px rgba(0, 0, 0, .07)
+    }
+
+    .ct thead tr {
+      background: linear-gradient(135deg, var(--green), var(--blue))
+    }
+
+    .ct thead th {
+      padding: 15px 18px;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 13.5px;
+      text-align: center
+    }
+
+    .ct thead th:first-child {
+      text-align: left
+    }
+
+    .ct tbody tr:nth-child(even) {
+      background: #f8fffe
+    }
+
+    .ct tbody tr:hover {
+      background: #edf7f2
+    }
+
+    .ct td {
+      padding: 12px 18px;
+      font-size: 13px;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+      vertical-align: middle
+    }
+
+    .ct td:first-child {
+      text-align: left;
+      font-weight: 600;
+      color: #444;
+      display: flex;
+      align-items: center
+    }
+
+    .nb {
+      display: inline-flex;
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fff;
+      font-size: 10.5px;
+      font-weight: 700;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
+      flex-shrink: 0
+    }
+
+    .tk {
+      color: var(--gd);
+      font-weight: 700
+    }
+
+    .to {
+      color: #bbb
+    }
+
+    .smb {
+      display: block;
+      margin: 15px auto 0;
+      background: none;
+      border: 2px solid var(--green);
+      color: var(--green);
+      padding: 9px 26px;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      transition: .3s
+    }
+
+    .smb:hover {
+      background: var(--green);
+      color: #fff
+    }
+
+    .hr2 {
+      display: none
+    }
+
+    .hr2.show {
+      display: table-row-group
+    }
+
+    /* table logo */
+    .ct-logo-img {
+      height: 26px;
+      width: auto;
+      vertical-align: middle
+    }
+
+    /* BENEFITS */
+    .ben-sec {
+      padding: 88px 0;
+      background: var(--bg)
+    }
+
+    .sec-title {
+      text-align: center;
+      margin-bottom: 50px
+    }
+
+    .sec-title .sub {
+      display: inline-block;
+      color: var(--green);
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      margin-bottom: 10px
+    }
+
+    .sec-title h2 {
+      font-size: clamp(24px, 3.8vw, 40px);
+      font-weight: 900;
+      color: var(--dark)
+    }
+
+    .sec-title h2 span {
+      color: var(--green)
+    }
+
+    .sec-title p {
+      color: #666;
+      margin-top: 12px;
+      font-size: 15px;
+      max-width: 550px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.75
+    }
+
+    .ubar {
+      width: 54px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--green), var(--blue));
+      border-radius: 2px;
+      margin: 14px auto 0
+    }
+
+    .ben-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px
+    }
+
+    .ben {
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px 24px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, .06);
+      transition: .35s;
+      position: relative;
+      overflow: hidden
+    }
+
+    .ben::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--green), var(--blue))
+    }
+
+    .ben:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 44px rgba(0, 0, 0, .1)
+    }
+
+    .ben-num {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--green), var(--gd));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+      font-size: 19px;
+      margin-bottom: 16px
+    }
+
+    .ben h4 {
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 9px
+    }
+
+    .ben p {
+      font-size: 13.5px;
+      color: #666;
+      line-height: 1.75
+    }
+
+    /* ════ MEET OUR FACULTY ════ */
+    .faculty-sec {
+      padding: 88px 0;
+      background: var(--bg)
+    }
+
+    .faculty-card {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 0;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 6px 44px rgba(0, 0, 0, .09);
+      overflow: hidden;
+    }
+
+    .faculty-photo-col {
+      background: linear-gradient(160deg, var(--dark) 0%, var(--bd) 100%);
+      padding: 40px 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 480px;
+    }
+
+    .faculty-photo-box {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 3px solid rgba(255, 255, 255, .15);
+      background: rgba(255, 255, 255, .05);
+    }
+
+    /* Faculty photo - add src in the img tag below */
+    .faculty-photo-box img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      min-height: 300px;
+    }
+
+    /* Faculty placeholder shown when src is empty */
+    .faculty-ph {
+      width: 100%;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .faculty-ph .ph-icon {
+      font-size: 52px;
+      opacity: .3
+    }
+
+    .faculty-ph p {
+      color: rgba(255, 255, 255, .3);
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .faculty-bio-col {
+      padding: 44px 44px 44px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .fac-tag {
+      display: inline-block;
+      background: #edf7f2;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 14px
+    }
+
+    .faculty-bio-col h2 {
+      font-size: clamp(22px, 2.8vw, 32px);
+      font-weight: 900;
+      color: var(--dark);
+      line-height: 1.2;
+      margin-bottom: 6px
+    }
+
+    .faculty-bio-col h2 span {
+      color: var(--green)
+    }
+
+    .fac-role {
+      font-size: 14px;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    .fac-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px
+    }
+
+    .fac-badge-pill {
+      background: rgba(26, 122, 60, .1);
+      border: 1px solid rgba(26, 122, 60, .25);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 14px;
+      border-radius: 20px
+    }
+
+    .faculty-bio-col p {
+      font-size: 14.5px;
+      color: #555;
+      line-height: 1.82;
+      margin-bottom: 14px
+    }
+
+    .fac-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 20px
+    }
+
+    .fac-stat {
+      background: var(--bg);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      border-bottom: 3px solid var(--green)
+    }
+
+    .fac-stat strong {
+      display: block;
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--green)
+    }
+
+    .fac-stat span {
+      font-size: 11px;
+      color: #888;
+      font-weight: 600
+    }
+
+    /* ════ STUDENT EXPERIENCE ════ */
+    .student-sec {
+      padding: 88px 0;
+      background: #fff
+    }
+
+    .student-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center
+    }
+
+    .video-box {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 16px;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--dark), var(--bd));
+      position: relative;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, .18);
+    }
+
+    /* Video iframe - add src in iframe tag below */
+    .video-box iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    /* Video placeholder shown when no iframe src */
+    .video-ph {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .video-ph .vp-icon {
+      font-size: 52px;
+      opacity: .3
+    }
+
+    .video-ph p {
+      color: rgba(255, 255, 255, .35);
+      font-size: 13px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .stu-tag {
+      display: inline-block;
+      background: #edf7f2;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 14px
+    }
+
+    .student-content h2 {
+      font-size: clamp(22px, 2.8vw, 32px);
+      font-weight: 900;
+      color: var(--dark);
+      line-height: 1.2;
+      margin-bottom: 14px
+    }
+
+    .student-content h2 span {
+      color: var(--green)
+    }
+
+    .student-content p {
+      font-size: 14.5px;
+      color: #555;
+      line-height: 1.82;
+      margin-bottom: 16px
+    }
+
+    .stu-points {
+      list-style: none;
+      margin-bottom: 20px
+    }
+
+    .stu-points li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 9px 0;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 14px;
+      color: #444
+    }
+
+    .stu-points li .sp-icon {
+      font-size: 18px;
+      flex-shrink: 0;
+      margin-top: 1px
+    }
+
+    .stu-quote {
+      background: linear-gradient(135deg, #edf7f2, #e8f0fc);
+      border-radius: 14px;
+      padding: 20px 24px;
+      border-left: 4px solid var(--green);
+      margin-top: 8px
+    }
+
+    .stu-quote p {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.75;
+      font-style: italic;
+      margin: 0
+    }
+
+    .stu-quote cite {
+      display: block;
+      margin-top: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--green);
+      font-style: normal
+    }
+
+    .stu-stars {
+      color: var(--gold);
+      font-size: 16px;
+      margin-bottom: 6px
+    }
+
+    /* CTA FORM */
+    .cta-sec {
+      padding: 88px 0;
+      background: linear-gradient(135deg, var(--gd) 0%, var(--bd) 100%);
+      position: relative;
+      overflow: hidden
+    }
+
+    .cta-sec::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.022'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z'/%3E%3C/g%3E%3C/svg%3E")
+    }
+
+    .cta-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 56px;
+      align-items: center;
+      position: relative;
+      z-index: 1
+    }
+
+    .cta-text h2 {
+      font-size: clamp(26px, 3.8vw, 42px);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.18;
+      margin-bottom: 16px
+    }
+
+    .cta-text h2 .gold {
+      color: var(--gold)
+    }
+
+    .cta-text p {
+      color: rgba(255, 255, 255, .76);
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 22px
+    }
+
+    .cta-list {
+      list-style: none
+    }
+
+    .cta-list li {
+      color: rgba(255, 255, 255, .9);
+      font-size: 14px;
+      padding: 6px 0;
+      display: flex;
+      align-items: center;
+      gap: 9px
+    }
+
+    .cta-list li::before {
+      content: '✓';
+      color: var(--gold);
+      font-weight: 800;
+      font-size: 15px
+    }
+
+    .cta-form {
+      background: rgba(255, 255, 255, .09);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: 20px;
+      padding: 36px 32px
+    }
+
+    .cta-form h3 {
+      color: #fff;
+      font-size: 21px;
+      font-weight: 800;
+      margin-bottom: 22px;
+      text-align: center
+    }
+
+    .ff {
+      margin-bottom: 14px
+    }
+
+    .ff input {
+      width: 100%;
+      padding: 13px 17px;
+      background: rgba(255, 255, 255, .1);
+      border: 1.5px solid rgba(255, 255, 255, .2);
+      border-radius: 8px;
+      color: #fff;
+      font-size: 14px;
+      font-family: 'Nunito', sans-serif;
+      outline: none;
+      transition: .3s
+    }
+
+    .ff input::placeholder {
+      color: rgba(255, 255, 255, .46)
+    }
+
+    .ff input:focus {
+      border-color: var(--gold);
+      background: rgba(255, 255, 255, .14)
+    }
+
+    .fsub {
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(135deg, var(--gold), #c47a0a);
+      color: #fff;
+      border: none;
+      border-radius: 9px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      cursor: pointer;
+      transition: .3s;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      box-shadow: 0 5px 18px rgba(245, 166, 35, .33)
+    }
+
+    .fsub:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 9px 24px rgba(245, 166, 35, .43)
+    }
+
+    /* FOOTER */
+    .footer {
+      background: var(--dark);
+      padding: 60px 0 0
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.4fr;
+      gap: 38px;
+      padding-bottom: 50px;
+      border-bottom: 1px solid rgba(255, 255, 255, .07)
+    }
+
+    .fb .brand {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+      font-size: 19px;
+      margin-bottom: 13px
+    }
+
+    .fb .brand .g {
+      color: var(--green)
+    }
+
+    .fb .brand .b {
+      color: var(--blue)
+    }
+
+    .fb>p {
+      color: rgba(255, 255, 255, .54);
+      font-size: 13.5px;
+      line-height: 1.8;
+      margin-bottom: 16px
+    }
+
+    .fcr {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      margin-bottom: 9px
+    }
+
+    .fcr .fi {
+      color: var(--green);
+      font-size: 14px;
+      margin-top: 1px
+    }
+
+    .fcr span,
+    .fcr a {
+      color: rgba(255, 255, 255, .6);
+      font-size: 13px;
+      line-height: 1.55;
+      text-decoration: none
+    }
+
+    .fcr a:hover {
+      color: var(--green)
+    }
+
+    .fcol h4 {
+      color: #fff;
+      font-size: 14.5px;
+      font-weight: 700;
+      margin-bottom: 17px;
+      padding-bottom: 9px;
+      position: relative
+    }
+
+    .fcol h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 26px;
+      height: 2px;
+      background: var(--green)
+    }
+
+    .fcol ul {
+      list-style: none
+    }
+
+    .fcol ul li {
+      margin-bottom: 9px
+    }
+
+    .fcol ul li a {
+      color: rgba(255, 255, 255, .58);
+      text-decoration: none;
+      font-size: 13.5px;
+      transition: .2s;
+      display: flex;
+      align-items: center;
+      gap: 5px
+    }
+
+    .fcol ul li a::before {
+      content: '›';
+      color: var(--green);
+      font-size: 15px
+    }
+
+    .fcol ul li a:hover {
+      color: var(--green);
+      padding-left: 3px
+    }
+
+    .fhours p {
+      color: rgba(255, 255, 255, .58);
+      font-size: 13.5px;
+      line-height: 1.7;
+      margin-bottom: 8px
+    }
+
+    .fhours .day {
+      color: #fff;
+      font-weight: 600
+    }
+
+    .soc {
+      display: flex;
+      gap: 8px;
+      margin-top: 16px
+    }
+
+    .soc a {
+      width: 34px;
+      height: 34px;
+      border-radius: 7px;
+      background: rgba(255, 255, 255, .07);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, .62);
+      font-size: 13px;
+      text-decoration: none;
+      transition: .3s;
+      font-family: monospace
+    }
+
+    .soc a:hover {
+      background: var(--green);
+      color: #fff
+    }
+
+    .wa-f {
+      display: inline-block;
+      margin-top: 14px;
+      background: #25D366;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 12.5px;
+      text-decoration: none;
+      transition: .3s
+    }
+
+    .wa-f:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 14px rgba(37, 211, 102, .38)
+    }
+
+    .fbot {
+      padding: 18px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px
+    }
+
+    .fbot p {
+      color: rgba(255, 255, 255, .3);
+      font-size: 12px
+    }
+
+    .fbot a {
+      color: var(--green);
+      text-decoration: none
+    }
+
+    .waf {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      color: #fff;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 5px 20px rgba(37, 211, 102, .5);
+      z-index: 9999;
+      animation: waBnc 2.4s ease-in-out infinite
+    }
+
+    @keyframes waBnc {
+
+      0%,
+      100% {
+        transform: translateY(0)
+      }
+
+      50% {
+        transform: translateY(-6px)
+      }
+    }
+
+    .fade {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity .6s, transform .6s
+    }
+
+    .fade.in {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:1024px) {
+      .hero-outer {
+        grid-template-columns: 1fr
+      }
+
+      .hero-img-side {
+        min-height: 320px;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, .08)
+      }
+
+      .about-boxes-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .cta-grid,
+      .why-top,
+      .footer-grid {
+        grid-template-columns: 1fr
+      }
+
+      .founders-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .stats-main {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .ben-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .stats-sub {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .mega-grid {
+        grid-template-columns: repeat(3, 1fr)
+      }
+
+      .faculty-card {
+        grid-template-columns: 1fr
+      }
+
+      .faculty-photo-col {
+        min-height: auto;
+        padding: 30px
+      }
+
+      .student-inner {
+        grid-template-columns: 1fr
+      }
+    }
+
+    @media(max-width:768px) {
+      nav ul {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, .96);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        z-index: 9999;
+        overflow-y: auto;
+        padding: 20px
+      }
+
+      nav ul.open {
+        display: flex
+      }
+
+      nav ul li>a {
+        font-size: 17px;
+        color: #fff
+      }
+
+      .drop,
+      .drop-sub,
+      .mega-drop {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+        max-height: none
+      }
+
+      .drop li a,
+      .mega-link {
+        color: rgba(255, 255, 255, .75);
+        font-size: 14px
+      }
+
+      .drop-sub {
+        padding-left: 16px
+      }
+
+      .mega-grid {
+        grid-template-columns: 1fr 1fr;
+        padding: 0
+      }
+
+      .mega-inner {
+        padding: 10px 0
+      }
+
+      .hamburger {
+        display: flex
+      }
+
+      .founders-grid,
+      .ben-grid,
+      .footer-grid {
+        grid-template-columns: 1fr
+      }
+
+      .stats-sub {
+        grid-template-columns: 1fr
+      }
+
+      .about-boxes-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media(max-width:480px) {
+      .stats-main {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .hero-text h1 {
+        font-size: 26px
+      }
+
+      .about-boxes-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .mega-grid {
+        grid-template-columns: 1fr
+      }
+
+      .fac-stats {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    /* Hero floating tags */
+    .hero-floating-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .hft {
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(94, 221, 160, .3);
+      color: #5edda0;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 20px;
+      display: inline-block;
+    }
+
+    /* Select dropdown in form */
+    .ff-select {
+      width: 100%;
+      padding: 13px 17px;
+      background: rgba(255, 255, 255, .1);
+      border: 1.5px solid rgba(255, 255, 255, .2);
+      border-radius: 8px;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+      transition: .3s;
+      -webkit-appearance: none;
+      cursor: pointer;
+    }
+
+    .ff-select option {
+      color: #333;
+      background: #fff;
+    }
+
+    .ff-select:focus {
+      border-color: var(--gold);
+      background: rgba(255, 255, 255, .14);
+    }
+
+    /* ── MENTOR SLIDER ── */
+    .mentor-slider-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mentor-slides {
+      position: relative;
+    }
+
+    .mentor-slide {
+      display: none;
+    }
+
+    .mentor-slide.active {
+      display: block;
+    }
+
+    .mentor-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .mentor-prev,
+    .mentor-next {
+      background: var(--green);
+      color: #fff;
+      border: none;
+      padding: 11px 26px;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    .mentor-prev:hover,
+    .mentor-next:hover {
+      background: var(--gd);
+      transform: translateY(-2px);
+    }
+
+    .mentor-dot-wrap {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .mentor-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ccc;
+      cursor: pointer;
+      transition: .25s;
+      border: none;
+      padding: 0;
+    }
+
+    .mentor-dot.active {
+      background: var(--green);
+      width: 26px;
+      border-radius: 5px;
+    }
+
+    .mentor-counter {
+      font-size: 13px;
+      color: #888;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container">
+      <div class="ti">
+        <span>📍 A-441, Sun Westbank, Ashram Road, Navrangpura, Ahmedabad – 380009</span>
+        <span>
+          <a href="tel:+919974541225">📞 +91 99745 41225</a>
+          <a href="https://mail.google.com/mail/?view=cm&to=info@koreeximacademy.com">✉ <span class="__cf_email__"
+              data-cfemail="afc6c1c9c0efc4c0ddcacad7c6c2cecccecbcac2d681ccc0c2">info@koreeximacademy.com</span></a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="index.html" class="logo-wrap">
+          <!-- ═══════════════════════════════════════════════════
+             LOGO IMAGE — apna logo URL yahan daalo
+             src="" mein apni image ka URL ya path likhein
+        ════════════════════════════════════════════════════ -->
+          <img src="https://sandybrown-ram-533017.hostingersite.com/wp-content/uploads/2025/11/Untitled-design-31.svg"
+            alt="Kore EXIM Academy Logo" class="logo-img" onerror="this.style.display='none'">
+          <div class="logo-words">
+            <div><span class="g"></span> <span class="b"></span></div>
+            <p class="g"></p>
+          </div>
+        </a>
+
+        <nav>
+          <ul id="navMenu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li>
+              <a href="courses.html">Courses <span class="arr">▾</span></a>
+              <ol class="drop drop-courses">
+                <li>
+                  <a href="courses.html"><span class="di">📦</span> Export Import Course <span class="arr2">›</span></a>
+                  <ol class="drop-sub">
+                    <li><a href="courses.html#free"><span class="di">🆓</span> Free Course <span
+                          class="badge-free">FREE</span></a></li>
+                    <li><a href="courses.html#basic"><span class="di">📗</span> Basic Course <span
+                          class="badge-basic">BASIC</span></a></li>
+                    <li><a href="courses.html#master"><span class="di">🏆</span> Master Course <span
+                          class="badge-master">MASTER</span></a></li>
+                  </ol>
+                </li>
+                <li><a href="courses.html#consulting"><span class="di">💼</span> FREE EXIM
+                    Consultancy</a></li>
+                <li><a href="courses.html#advanced"><span class="di">🎯</span> EXIM Advance
+                    Certificate</a></li>
+                <li><a href="courses.html#complete"><span class="di">📚</span> Complete EXIM
+                    Training</a></li>
+              </ol>
+            </li>
+            <li class="mega-parent">
+              <a href="exim-hub.html">Exim Hub <span class="arr">▾</span></a>
+              <div class="mega-drop">
+                <div class="mega-inner">
+                  <div class="mega-top">
+                    <h4>🌐 EXIM Hub Free Resources <span>40+ Tools & Lists</span></h4>
+                    <small>Click any resource below to access it</small>
+                  </div>
+                  <div class="mega-grid">
+                    <a href="exim-hub.html#b2b-b2c" class="mega-link"><span class="ml">🏪</span> B2B
+                      &amp; B2C List</a>
+                    <a href="exim-hub.html#bank-account" class="mega-link"><span class="ml">🏦</span> Bank Account
+                      Details</a>
+                    <a href="exim-hub.html#brand-reg" class="mega-link"><span class="ml">™️</span>
+                      Brand
+                      Registration</a>
+                    <a href="exim-hub.html#business-idea" class="mega-link"><span class="ml">💡</span> Business Idea</a>
+                    <a href="exim-hub.html#cha-list" class="mega-link"><span class="ml">🚛</span>
+                      CHA &amp; Air Courier
+                      List</a>
+                    <a href="exim-hub.html#cold-storage" class="mega-link"><span class="ml">❄️</span> Cold Storage Ware
+                      House</a>
+                    <a href="exim-hub.html#costing" class="mega-link"><span class="ml">🧮</span>
+                      Costing &amp; Price
+                      Calculation</a>
+                    <a href="exim-hub.html#country-licence" class="mega-link"><span class="ml">🪪</span> Country Wise
+                      Licences</a>
+                    <a href="exim-hub.html#currency" class="mega-link"><span class="ml">💱</span>
+                      Currency Exchange
+                      Rate</a>
+                    <a href="exim-hub.html#dgft" class="mega-link"><span class="ml">📢</span> DGFT
+                      Notification</a>
+                    <a href="exim-hub.html#doc-cert" class="mega-link"><span class="ml">📜</span>
+                      Document
+                      Certificate</a>
+                    <a href="exim-hub.html#doc-list" class="mega-link"><span class="ml">📋</span>
+                      Document List</a>
+                    <a href="exim-hub.html#download" class="mega-link"><span class="ml">⬇️</span>
+                      Download Materials</a>
+                    <a href="exim-hub.html#duty-calc" class="mega-link"><span class="ml">🔢</span>
+                      Duty Calculation</a>
+                    <a href="exim-hub.html#email-formats" class="mega-link"><span class="ml">✉️</span> Email Formats</a>
+                    <a href="exim-hub.html#products-list" class="mega-link"><span class="ml">📦</span> Export Import
+                      Products List</a>
+                    <a href="exim-hub.html#export-process" class="mega-link"><span class="ml">🔄</span> Export
+                      Process</a>
+                    <a href="exim-hub.html#freight" class="mega-link"><span class="ml">🚢</span>
+                      Freight Prices</a>
+                    <a href="exim-hub.html#govt-benefit" class="mega-link"><span class="ml">🏛️</span> Govt. Benefit
+                      Applications</a>
+                    <a href="exim-hub.html#govt-subsidy" class="mega-link"><span class="ml">💰</span> Govt. Subsidy
+                      Exhibition List</a>
+                    <a href="exim-hub.html#how-buyers" class="mega-link"><span class="ml">🔍</span>
+                      How to Search
+                      Buyers</a>
+                    <a href="exim-hub.html#hs-code" class="mega-link"><span class="ml">🔖</span> HS
+                      Code &amp; Port
+                      Code</a>
+                    <a href="exim-hub.html#hsn-code" class="mega-link"><span class="ml">📊</span>
+                      HSN Code</a>
+                    <a href="exim-hub.html#iec-update" class="mega-link"><span class="ml">🆔</span>
+                      IEC Update</a>
+                    <a href="exim-hub.html#import-duty" class="mega-link"><span class="ml">💸</span>
+                      Import Duty
+                      Payment</a>
+                    <a href="exim-hub.html#inco-terms" class="mega-link"><span class="ml">📃</span>
+                      INCO Terms</a>
+                    <a href="exim-hub.html#india-export" class="mega-link"><span class="ml">📈</span> India's Export
+                      Growing Products</a>
+                    <a href="exim-hub.html#india-import" class="mega-link"><span class="ml">📉</span> India's Import
+                      Growing Products</a>
+                    <a href="exim-hub.html#insurance" class="mega-link"><span class="ml">🛡️</span>
+                      Insurance</a>
+                    <a href="exim-hub.html#intl-exhibition" class="mega-link"><span class="ml">🌍</span> International
+                      Exhibition</a>
+                    <a href="exim-hub.html#payment-terms" class="mega-link"><span class="ml">💳</span> Payment Terms</a>
+                    <a href="exim-hub.html#product-suppliers" class="mega-link"><span class="ml">🏭</span> Product
+                      Suppliers List</a>
+                    <a href="exim-hub.html#product-growth" class="mega-link"><span class="ml">📊</span> Product Wise
+                      Country &amp; Growth Rate</a>
+                    <a href="exim-hub.html#rcmc" class="mega-link"><span class="ml">📝</span> RCMC
+                      Registration</a>
+                    <a href="exim-hub.html#restricted" class="mega-link"><span class="ml">🚫</span>
+                      Restricted &amp;
+                      Prohibited Products</a>
+                    <a href="exim-hub.html#container-size" class="mega-link"><span class="ml">📐</span> Size Calculation
+                      on Container</a>
+                    <a href="exim-hub.html#party-verify" class="mega-link"><span class="ml">✅</span>
+                      Step For Party
+                      Verify</a>
+                    <a href="exim-hub.html#tender" class="mega-link"><span class="ml">📌</span>
+                      Tender &amp; Auction</a>
+                    <a href="exim-hub.html#top100" class="mega-link"><span class="ml">🏅</span> Top
+                      100 Export Import
+                      Product</a>
+                    <a href="exim-hub.html#trade-agreement" class="mega-link"><span class="ml">🤝</span> Trade Agreement
+                      List</a>
+                    <a href="exim-hub.html#useful-links" class="mega-link"><span class="ml">🔗</span> Useful Links</a>
+                    <a href="exim-hub.html#state-export" class="mega-link"><span class="ml">🗺️</span> State Wise Top
+                      Export Product</a>
+                    <a href="exim-hub.html#buyers-list" class="mega-link"><span class="ml">👥</span>
+                      Buyers List (150+
+                      Countries)</a>
+                    <a href="exim-hub.html#tips-alert" class="mega-link"><span class="ml">⚠️</span>
+                      Tips and Alert</a>
+                    <a href="exim-hub.html#opportunities" class="mega-link"><span class="ml">🚀</span> Opportunities</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="nav-cta">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="hamburger" onclick="document.getElementById('navMenu').classList.toggle('open')">
+          <span></span><span></span><span></span>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-blob"
+      style="width:520px;height:520px;top:-160px;left:-80px;background:radial-gradient(circle,rgba(26,122,60,.13) 0,transparent 65%);animation-duration:9s">
+    </div>
+    <div class="hero-blob"
+      style="width:380px;height:380px;bottom:-80px;left:30%;background:radial-gradient(circle,rgba(10,61,143,.14) 0,transparent 65%);animation-duration:11s;animation-delay:3s">
+    </div>
+    <!-- Faint world map trade lines -->
+    <svg class="hero-trade-lines" viewBox="0 0 1200 580" xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMid slice">
+      <!-- Continents outline faint -->
+      <ellipse cx="180" cy="280" rx="140" ry="90" fill="none" stroke="#22a050" stroke-width="0.8" />
+      <ellipse cx="550" cy="250" rx="180" ry="110" fill="none" stroke="#22a050" stroke-width="0.6" />
+      <ellipse cx="900" cy="260" rx="130" ry="85" fill="none" stroke="#22a050" stroke-width="0.8" />
+      <ellipse cx="1080" cy="320" rx="80" ry="60" fill="none" stroke="#22a050" stroke-width="0.6" />
+      <!-- India highlight -->
+      <circle cx="720" cy="310" r="12" fill="none" stroke="#f5a623" stroke-width="1.5" />
+      <circle cx="720" cy="310" r="5" fill="#f5a623" opacity="0.6" />
+      <!-- Trade routes from India -->
+      <path d="M720 310 Q500 180 180 260" stroke="#f5a623" stroke-width="1" fill="none" stroke-dasharray="8,5"
+        opacity="0.5" />
+      <path d="M720 310 Q820 200 920 240" stroke="#22a050" stroke-width="1" fill="none" stroke-dasharray="8,5"
+        opacity="0.5" />
+      <path d="M720 310 Q900 350 1060 300" stroke="#f5a623" stroke-width="0.8" fill="none" stroke-dasharray="6,4"
+        opacity="0.4" />
+      <path d="M720 310 Q600 400 550 380" stroke="#22a050" stroke-width="0.8" fill="none" stroke-dasharray="6,4"
+        opacity="0.4" />
+      <!-- Destination dots -->
+      <circle cx="180" cy="260" r="4" fill="#fff" opacity="0.4" />
+      <circle cx="920" cy="240" r="4" fill="#fff" opacity="0.4" />
+      <circle cx="1060" cy="300" r="4" fill="#fff" opacity="0.4" />
+      <circle cx="550" cy="380" r="4" fill="#fff" opacity="0.4" />
+    </svg>
+    <div class="hero-outer">
+      <div class="hero-text">
+        <span class="hero-badge">🚀 Next Batch Starting from 20 April</span>
+        <h1>Learn Import Export<br><span class="grn">From Real Exporters</span></h1>
+        <p>A <strong>100% practical export training academy</strong> built by active exporters. Learn how real
+          international trade works from <strong>product selection and buyer sourcing to negotiation and
+            shipment execution.</strong> Powered by the team behind a <strong>Government recognized 3-Star
+            Export House shipping to 81+ countries.</strong></p>
+        <div class="hero-btns">
+          <a href="courses.html" class="btn-g">Explore the Program</a>
+          <a href="contact.html" class="btn-o">Join the First Batch</a>
+        </div>
+        <div class="hero-floating-tags">
+          <span class="hft">🎯 Practical Learning</span>
+          <span class="hft">📊 Real Export Case Studies</span>
+          <span class="hft">🛠️ Tools Used by Exporters</span>
+        </div>
+        <div class="hero-mini-stats">
+          <div class="hms"><strong>10+</strong><span>Years Expertise</span></div>
+          <div class="hms"><strong>81+</strong><span>Countries</span></div>
+          <div class="hms"><strong>3★</strong><span>Export House</span></div>
+          <div class="hms"><strong>5000+</strong><span>Containers</span></div>
+        </div>
+        <div class="hero-phone">
+          <span>Have Questions?</span>
+          <a href="tel:+919974541225">+91 99745 41225</a>
+        </div>
+      </div>
+      <div class="hero-img-side">
+        <div class="hero-img-inner">
+          <div class="hero-shimmer"></div>
+          <div class="hcorn tl"></div>
+          <div class="hcorn br"></div>
+
+          <!-- ═══════════════════════════════════════════════════════
+             HERO BANNER IMAGE
+             src="" mein apni banner image ka URL ya path daalo
+             Jab tak src khali hai, placeholder dikh raha hai
+        ════════════════════════════════════════════════════════ -->
+          <img src="" alt="Hero Banner" class="hero-banner-img" id="heroBannerImg" onerror="this.style.display='none'">
+
+          <!-- Yeh placeholder tab dikhega jab upar wali img ka src="" khali ho -->
+          <div class="hero-img-placeholder" id="heroBannerPlaceholder">
+            <div class="upi">🖼️</div>
+            <h3>Hero Banner Image</h3>
+            <p>HTML mein img src="" mein<br>apni image ka URL daalo</p>
+          </div>
+
+          <div class="hero-dots">
+            <div class="hdot on"></div>
+            <div class="hdot"></div>
+            <div class="hdot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDERS -->
+  <section class="founders-sec">
+    <div class="container">
+      <div class="sec-title fade">
+        <span class="sub">Meet Our Founders</span>
+        <h2>Founder's <span>Export Legacy</span></h2>
+        <p>Our founders operate a Government of India recognized 3-Star Export House with a proven record across
+          multiple global markets. Their live export experience shapes every lesson at KORE EXIM ACADEMY.</p>
+        <div class="ubar"></div>
+      </div>
+      <div class="founders-grid fade">
+
+        <!-- FOUNDER 1 -->
+        <div class="fc">
+          <div class="fc-top">
+            <!-- ═══════════════════════════════════════════════════════
+               FOUNDER 1 PHOTO — src mein apni image ka URL daalo
+          ════════════════════════════════════════════════════════ -->
+            <img
+              src="https://sandybrown-ram-533017.hostingersite.com/wp-content/uploads/2026/01/cedf4371-1f71-4708-952a-312393b0de2f.jpg"
+              alt="Co-Founder" class="fc-photo"
+              onerror="this.style.display='none';document.getElementById('f1ph').style.display='flex'">
+            <div class="fc-photo-ph" id="f1ph" style="display:none">
+              <div class="ph-icon">📷</div><span>Founder Photo<br>Add URL in src</span>
+            </div>
+            <div class="fc-hinfo">
+              <h3>Co-Founder</h3>
+              <div class="des">🏭 Kore International Pvt. Ltd.</div>
+              <div class="fc-tags"><span>🌍 81+ Countries</span><span>📦 5000+ Containers</span><span>⏱
+                  10+ Years</span>
+              </div>
+            </div>
+          </div>
+          <div class="fc-body">
+            <p>Our founder brings <strong>10+ years of real-world export experience</strong> operating a
+              Government of
+              India recognized <strong>3-Star Export House</strong>. This hands-on field expertise
+              directly shapes the
+              training delivered at KORE EXIM ACADEMY.</p>
+            <p>Strong compliance practices, global buyer understanding, and real execution excellence — this
+              is what
+              makes KORE EXIM training genuinely unique and highly practical.</p>
+            <div class="fc-stats">
+              <div class="fst"><strong>10+</strong><span>Yrs Export</span></div>
+              <div class="fst"><strong>81+</strong><span>Countries</span></div>
+              <div class="fst"><strong>30+</strong><span>Global Expos</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOUNDER 2 -->
+        <div class="fc">
+          <div class="fc-top">
+            <!-- ═══════════════════════════════════════════════════════
+               FOUNDER 2 PHOTO — src mein apni image ka URL daalo
+          ════════════════════════════════════════════════════════ -->
+            <img src="https://sandybrown-ram-533017.hostingersite.com/wp-content/uploads/2026/03/PRATIEK.jpg.jpeg"
+              alt="Pratiek – Co-Founder" class="fc-photo"
+              onerror="this.style.display='none';document.getElementById('f2ph').style.display='flex'">
+            <div class="fc-photo-ph" id="f2ph" style="display:none">
+              <div class="ph-icon">📷</div><span>Founder Photo<br>Add URL in src</span>
+            </div>
+            <div class="fc-hinfo">
+              <h3>Co-Founder</h3>
+              <div class="des">🌐 Global Buyer Network Expert</div>
+              <div class="fc-tags"><span>🤝 Asia, Europe, ME</span><span>💡 Trade Strategist</span></div>
+            </div>
+          </div>
+          <div class="fc-body">
+            <p>Our co-founder has built <strong>strong global buyer relationships</strong> across Asia,
+              Europe and the
+              Middle East through years of export excellence. A true practitioner of international trade
+              strategy.</p>
+            <p>Students learn directly from someone who has <strong>identified real buyers, negotiated deals
+                and closed
+                profitable international trade opportunities</strong> in actual global markets.</p>
+            <div class="fc-stats">
+              <div class="fst"><strong>3★</strong><span>Export House</span></div>
+              <div class="fst"><strong>5000+</strong><span>Containers</span></div>
+              <div class="fst"><strong>100%</strong><span>Practical</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-sec">
+    <div class="ga-ring r1"></div>
+    <div class="ga-ring r2"></div>
+    <div class="ga-ring r3"></div>
+    <div class="fdot"
+      style="width:8px;height:8px;background:rgba(255,255,255,.15);top:12%;left:5%;animation-duration:3.5s"></div>
+    <div class="fdot"
+      style="width:5px;height:5px;background:rgba(245,166,35,.3);top:70%;left:8%;animation-duration:5s;animation-delay:1s">
+    </div>
+    <div class="fdot"
+      style="width:9px;height:9px;background:rgba(26,122,60,.3);top:25%;right:6%;animation-duration:4.2s;animation-delay:.6s">
+    </div>
+    <div class="fdot"
+      style="width:6px;height:6px;background:rgba(255,255,255,.1);top:75%;right:12%;animation-duration:4.8s;animation-delay:1.5s">
+    </div>
+    <div class="container">
+      <div class="about-sec-title fade">
+        <span class="sub"></span>
+        <h2>The India's <span class="gold">Top Export Import</span><br><span class="grn">Training
+            Institute.</span></h2>
+        <p>KORE EXIM Academy is built by the team behind <strong>KORE International Pvt. Ltd., a
+            Government-recognized 3-Star Export House based in Ahmedabad.</strong> Our faculty are
+          <strong>active exporters who teach real export strategies, buyer sourcing methods, and shipment
+            execution.</strong>
+        </p>
+        <div class="about-stat-pills">
+          <div class="asp"><strong>3★</strong><span>Export House</span></div>
+          <div class="asp"><strong>5000+</strong><span>Containers Shipped</span></div>
+          <div class="asp"><strong>81+</strong><span>Countries Served</span></div>
+          <div class="asp"><strong>10+</strong><span>Years Experience</span></div>
+          <div class="asp"><strong>30+</strong><span>Global Expos</span></div>
+          <div class="asp"><strong>100%</strong><span>Practical Training</span></div>
+        </div>
+      </div>
+      <div class="about-boxes-grid fade">
+
+        <!-- ═══════════════════════════════════════════════════════════
+           ABOUT SECTION — 4 IMAGE BOXES
+           Har box mein src="" mein apni image ka URL ya path daalo
+           Jab tak src khali hai, placeholder icon dikh raha hai
+      ════════════════════════════════════════════════════════════ -->
+
+        <!-- <div class="abox pulse-box"> -->
+          <!-- IMAGE 1 — src="" mein URL daalo -->
+          <!-- <img src="" alt="About Image 1" onerror="this.style.display='none'">
+          <div class="abox-ph">📊</div>
+          <div class="abox-ph-label">Image 1 — Add src URL</div> -->
+        <!-- </div> -->
+
+        <!-- <div class="abox"> -->
+          <!-- IMAGE 2 — src="" mein URL daalo -->
+          <!-- <img src="" alt="About Image 2" onerror="this.style.display='none'">
+          <div class="abox-ph">🌐</div>
+          <div class="abox-ph-label">Image 2 — Add src URL</div>
+        </div> -->
+
+        <!-- <div class="abox"> -->
+          <!-- IMAGE 3 — src="" mein URL daalo -->
+          <!-- <img src="" alt="About Image 3" onerror="this.style.display='none'">
+          <div class="abox-ph">📦</div>
+          <div class="abox-ph-label">Image 3 — Add src URL</div>
+        </div> -->
+
+        <!-- <div class="abox pulse-box"> -->
+          <!-- IMAGE 4 — src="" mein URL daalo -->
+          <!-- <img src="" alt="About Image 4" onerror="this.style.display='none'">
+          <div class="abox-ph">🚢</div>
+          <div class="abox-ph-label">Image 4 — Add src URL</div>
+        </div> -->
+
+      </div>
+      <div class="ticker-box fade">
+        <div class="ticker-inner">
+          <span>⭐ <b>3★</b> Government Recognized Export House</span>
+          <span>📦 <b>5000+</b> Containers Exported Globally</span>
+          <span>🌍 <b>81+</b> Countries Served</span>
+          <span>🤝 <b>10+</b> Years Export Experience</span>
+          <span>🎯 Learn From <b>Active Exporters</b></span>
+          <span>📊 Real Export Deal <b>Case Studies</b></span>
+          <span>✅ <b>100%</b> Practical Export Training</span>
+          <span>🏛️ Participated in <b>30+ Global Expos</b></span>
+          <span>⭐ <b>3★</b> Government Recognized Export House</span>
+          <span>📦 <b>5000+</b> Containers Exported Globally</span>
+          <span>🌍 <b>81+</b> Countries Served</span>
+          <span>🤝 <b>10+</b> Years Export Experience</span>
+          <span>🎯 Learn From <b>Active Exporters</b></span>
+          <span>📊 Real Export Deal <b>Case Studies</b></span>
+          <span>✅ <b>100%</b> Practical Export Training</span>
+          <span>🏛️ Participated in <b>30+ Global Expos</b></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-sec">
+    <div class="container">
+      <div class="sec-title fade">
+        <span class="sub">Our Numbers</span>
+        <h2>KORE EXIM <span>Academy</span></h2>
+        <p>Real numbers that reflect our export excellence and training impact</p>
+        <div class="ubar"></div>
+      </div>
+      <div class="stats-box fade">
+        <div class="stats-head">
+          <h3>🌐 KORE EXIM ACADEMY</h3><small>— India's Leading Export Import Training Institute</small>
+        </div>
+        <div class="stats-main">
+          <div class="sc"><span class="sci"></span><span class="sn counter" data-target="36">0</span><span
+              class="sl">Days Program</span></div>
+          <div class="sc"><span class="sci"></span><span class="sn counter" data-target="72">0</span><span
+              class="sl">Hours Practical Training</span></div>
+          <div class="sc"><span class="sci">📈</span><span class="sn counter" data-target="10">0</span><span
+              class="sl">Industry Experts</span></div>
+          <div class="sc"><span class="sci">📦</span><span class="sn counter" data-target="500">0</span><span
+              class="sl">Import Startup</span></div>
+        </div>
+        <div class="stats-sub">
+          <div class="sm">
+            <div class="sm-icon">⏱</div>
+            <div><strong>10+</strong><span> Industry Experts</span></div>
+          </div>
+          <div class="sm">
+            <div class="sm-icon">🌍</div>
+            <div><strong>81+</strong><span>Countries Served</span></div>
+          </div>
+          <div class="sm">
+            <div class="sm-icon">🚢</div>
+            <div><strong>5000+</strong><span>Containers Shipped</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER IMAGE -->
+  <div class="banner-img-wrap">
+    <img src="./ChatGPT Image Mar 13, 2026, 02_29_46 PM.png" alt="Banner" class="banner-img">
+  </div>
+
+
+  <!-- WHY -->
+  <section class="why-sec">
+    <div class="container">
+      <div class="why-top fade">
+        <div class="why-left">
+          <h2>How the <span>Program Works?</span></h2>
+          <p>Our program is designed to take participants through the complete export journey from
+            understanding global markets to executing real export transactions, with an <strong>execution
+              first approach.</strong></p>
+        </div>
+        <div class="why-cards">
+          <div class="wc"><span class="we">🌏</span>
+            <div><strong>Market &amp; Product Discovery</strong><small>Understand how to evaluate product
+                demand, which countries import specific products, how exporters select profitable
+                markets</small></div>
+          </div>
+          <div class="wc"><span class="we">🤝</span>
+            <div><strong>Buyer Identification &amp; Outreach</strong><small>Learn buyer finding techniques,
+                export enquiry management, communication with global buyers</small></div>
+          </div>
+          <div class="wc"><span class="we">🚢</span>
+            <div><strong>Export Execution &amp; Logistics</strong><small>Gain insights into export
+                documentation, shipping processes, logistics planning, international trade
+                compliance</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="fade">
+        <table class="ct">
+          <thead>
+            <tr>
+              <th style="text-align:left;width:35%">Learning Area</th>
+              <th style="text-align:left">What You Will Gain</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="nb">1</span>Program Duration</td>
+              <td>36 Days Program • 72 Hours of practical training covering the complete export journey
+                from market research to shipment execution.</td>
+            </tr>
+            <tr>
+              <td><span class="nb">2</span>Industry-Led Learning</td>
+              <td>Sessions with active trade professionals including Custom House Agents (CHA), Shipping
+                Line Executives, Supply Chain Experts, Chartered Accountants, and Export Promotion
+                Council representatives.</td>
+            </tr>
+            <tr>
+              <td><span class="nb">3</span>Export Documentation &amp; Compliance</td>
+              <td>Practical understanding of <strong>70+ export documents</strong> including commercial
+                invoice, packing list, bill of lading, certificate of origin, shipping bill, and customs
+                clearance procedures.</td>
+            </tr>
+            <tr>
+              <td><span class="nb">4</span>Product Selection &amp; Market Opportunity</td>
+              <td>Learn how exporters evaluate <strong>global demand, market potential, and export
+                  feasibility</strong> to identify profitable export products and target markets.</td>
+            </tr>
+            <tr>
+              <td><span class="nb">5</span>Buyer Discovery (Execution-First Approach)</td>
+              <td>Learn how to identify and approach <strong>international buyers first</strong>, validate
+                demand, and structure supply accordingly using trade platforms, databases, and
+                professional outreach strategies.</td>
+            </tr>
+            <tr>
+              <td><span class="nb">6</span>Global Digital Marketing &amp; Brand Building</td>
+              <td>Learn how to generate international leads using <strong>LinkedIn outreach, B2B
+                  marketplaces (Alibaba, Global Sources), digital branding,</strong> and online export
+                marketing strategies.</td>
+            </tr>
+            <tr>
+              <td><span class="nb">7</span>Real Export Case Studies</td>
+              <td>Analysis of real export scenarios including <strong>buyer sourcing, pricing strategy,
+                  negotiation, documentation, and shipment execution.</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="ben-sec">
+    <div class="container">
+      <div class="sec-title fade">
+        <h2>What This Program Will <span>Help You Achieve</span></h2>
+        <div class="ubar"></div>
+      </div>
+      <div class="ben-grid">
+        <div class="ben fade">
+          <div class="ben-num">1</div>
+          <h4>Import–Export Made Simple</h4>
+          <p>Understand the complete export journey from product selection to shipment execution and gain
+            clarity on how global trade actually works.</p>
+        </div>
+        <div class="ben fade">
+          <div class="ben-num">2</div>
+          <h4>Find Real International Buyers</h4>
+          <p>Learn practical methods to identify, approach, and start conversations with genuine global
+            buyers.</p>
+        </div>
+        <div class="ben fade">
+          <div class="ben-num">3</div>
+          <h4>Master the Export Process</h4>
+          <p>Gain a clear understanding of licensing, negotiation, logistics coordination, and shipment
+            execution involved in international trade.</p>
+        </div>
+        <div class="ben fade">
+          <div class="ben-num">4</div>
+          <h4>Understand Complete Export Documentation</h4>
+          <p>Learn how to prepare and interpret key export documents such as commercial invoices, packing
+            lists, bill of lading, certificate of origin, shipping bills, and customs documentation.</p>
+        </div>
+        <div class="ben fade">
+          <div class="ben-num">5</div>
+          <h4>Build Your Own Brand</h4>
+          <p>Learn how to position your products professionally so international buyers trust your brand and
+            business credibility.</p>
+        </div>
+        <div class="ben fade">
+          <div class="ben-num">6</div>
+          <h4>Understand Export Pricing &amp; Profit Margins</h4>
+          <p>Learn how exporters calculate FOB pricing, logistics costs, duties, and margins to structure
+            profitable export deals.</p>
+        </div>
+        <div class="ben fade">
+          <div class="ben-num">7</div>
+          <h4>Communicate With Global Buyers</h4>
+          <p>Build confidence in handling international enquiries, negotiations, and professional buyer
+            communication.</p>
+        </div>
+        <div class="ben fade">
+          <div class="ben-num">8</div>
+          <h4>Explore Careers in International Trade</h4>
+          <p>Discover opportunities with export houses, customs clearing agents, freight forwarders, trading
+            companies, and logistics firms.</p>
+        </div>
+        <div class="ben fade">
+          <div class="ben-num">9</div>
+          <h4>Start Your Own Export Venture</h4>
+          <p>Gain the knowledge needed to identify products, find buyers, and begin your own export business.
+          </p>
+        </div>
+        <div class="ben fade">
+          <div class="ben-num">10</div>
+          <h4>Gain a High-Value Global Skill</h4>
+          <p>Export knowledge is a long-term skill that can create business and career opportunities for
+            years.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+     MEET OUR FACULTY
+
+════════════════════════════════════ -->
+  <section class="faculty-sec">
+    <div class="container">
+      <div class="sec-title fade">
+        <span class="sub">Industry Insider</span>
+        <h2>Our <span>Mentor</span></h2>
+        <p>Learn directly from active exporters and industry professionals with real global trade experience</p>
+        <div class="ubar"></div>
+      </div>
+
+      <div class="mentor-slider-wrap">
+        <div class="mentor-slides" id="mentorSlides">
+
+          <!-- SLIDE 1: CA Vinay Jain -->
+          <div class="mentor-slide active">
+            <div class="faculty-card">
+              <div class="faculty-photo-col">
+                <div class="faculty-photo-box">
+                  <img src="" alt="CA Vinay Jain" id="facultyPhoto"
+                    onerror="this.style.display='none';document.getElementById('facultyPh').style.display='flex'">
+                  <div class="faculty-ph" id="facultyPh">
+                    <div class="ph-icon">👨‍🏫</div>
+                    <p>Faculty Photo<br>src="" mein URL daalo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="faculty-bio-col">
+                <span class="fac-tag">⭐ Lead Faculty</span>
+                <h2>CA <span>Vinay Jain</span></h2>
+                <div class="fac-role">🏭 Director – Kore International Pvt. Ltd.</div>
+                <div class="fac-badges">
+                  <span class="fac-badge-pill">🌍 81+ Countries</span>
+                  <span class="fac-badge-pill">⭐ Government Recognized 3-Star Export House</span>
+                  <span class="fac-badge-pill">📦 5000+ Containers Shipped</span>
+                  <span class="fac-badge-pill">🏛️ 30+ Global Trade Exhibitions</span>
+                </div>
+                <p>CA Vinay Jain is a seasoned CEO and Chartered Accountant with <strong>10+ years of hands-on export
+                    experience</strong>, operating a Government of India recognized <strong>3-Star Export
+                    House</strong>.</p>
+                <p>Under his leadership, Kore International has built international trade relationships across
+                  <strong>81+ countries</strong>, managing exports, buyer negotiations, logistics coordination, and
+                  global trade operations.
+                </p>
+                <div class="fac-stats">
+                  <div class="fac-stat"><strong>10+</strong><span>Years in Trade</span></div>
+                  <div class="fac-stat"><strong>81+</strong><span>Countries</span></div>
+                  <div class="fac-stat"><strong>150+</strong><span>Live Case Studies</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 2: Pratiek Jain -->
+          <div class="mentor-slide">
+            <div class="faculty-card">
+              <div class="faculty-photo-col">
+                <div class="faculty-photo-box">
+                  <img src="https://sandybrown-ram-533017.hostingersite.com/wp-content/uploads/2026/03/PRATIEK.jpg.jpeg"
+                    alt="Pratiek Jain" onerror="this.style.display='none'">
+                  <div class="faculty-ph" style="display:none">
+                    <div class="ph-icon">👨‍🏫</div>
+                    <p>Faculty Photo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="faculty-bio-col">
+                <span class="fac-tag">Export Strategy &amp; Operations</span>
+                <h2>Pratiek <span>Jain</span></h2>
+                <div class="fac-role">🏭 Co-Founder – Kore International Pvt. Ltd.</div>
+                <div class="fac-badges">
+                  <span class="fac-badge-pill">🌍 Global Market Exposure</span>
+                  <span class="fac-badge-pill">📦 Export Operations &amp; Execution</span>
+                  <span class="fac-badge-pill">🤝 International Buyer Engagement</span>
+                  <span class="fac-badge-pill">📈 Practical Trade Insights</span>
+                </div>
+                <p>Pratiek Jain is the Co-Founder of Kore International Pvt. Ltd. With extensive experience in export
+                  operations, buyer engagement, and international trade coordination, he brings practical insights into
+                  how export transactions are executed in real business environments.</p>
+                <p>His sessions focus on the <strong>operational side of global trade</strong> — buyer communication,
+                  deal coordination, logistics planning, and shipment execution.</p>
+                <div class="fac-stats">
+                  <div class="fac-stat"><strong>5000+</strong><span>Containers</span></div>
+                  <div class="fac-stat"><strong>81+</strong><span>Countries</span></div>
+                  <div class="fac-stat"><strong>100%</strong><span>Practical</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 3: Pranav Shridhar -->
+          <div class="mentor-slide">
+            <div class="faculty-card">
+              <div class="faculty-photo-col">
+                <div class="faculty-photo-box">
+                  <div class="faculty-ph">
+                    <div class="ph-icon">👨‍🏫</div>
+                    <p>Pranav Shridhar<br>Photo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="faculty-bio-col">
+                <span class="fac-tag">Import Sourcing &amp; Global Supplier Networks</span>
+                <h2>Pranav <span>Shridhar</span></h2>
+                <div class="fac-role">🏭 Director – Kore International Pvt. Ltd.</div>
+                <div class="fac-badges">
+                  <span class="fac-badge-pill">🌍 Global Trade &amp; Sourcing</span>
+                  <span class="fac-badge-pill">📦 Import Operations &amp; Supply Networks</span>
+                  <span class="fac-badge-pill">🤝 International Supplier Relationships</span>
+                  <span class="fac-badge-pill">📈 Market Intelligence &amp; Trade Insights</span>
+                </div>
+                <p>Pranav Shridhar serves as Director at Kore International Pvt. Ltd. He oversees the company's import
+                  operations and international sourcing networks, working closely with suppliers across multiple
+                  countries.</p>
+                <p>Through the program, he shares practical knowledge on the <strong>import side of international
+                    trade</strong>, including sourcing strategies, supplier relationships, and cross-border procurement.
+                </p>
+                <div class="fac-stats">
+                  <div class="fac-stat"><strong>Multi</strong><span>Country Sourcing</span></div>
+                  <div class="fac-stat"><strong>Import</strong><span>Ops Expert</span></div>
+                  <div class="fac-stat"><strong>Global</strong><span>Supply Chain</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 4: Namya Kohli -->
+          <div class="mentor-slide">
+            <div class="faculty-card">
+              <div class="faculty-photo-col">
+                <div class="faculty-photo-box">
+                  <div class="faculty-ph">
+                    <div class="ph-icon">👩‍🏫</div>
+                    <p>Namya Kohli<br>Photo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="faculty-bio-col">
+                <span class="fac-tag">Global Branding &amp; Digital Marketing</span>
+                <h2>Namya <span>Kohli</span></h2>
+                <div class="fac-role">🎓 Computer Science Engineer – NIT Kurukshetra</div>
+                <div class="fac-badges">
+                  <span class="fac-badge-pill">🌍 International Brand Positioning</span>
+                  <span class="fac-badge-pill">🤖 AI-Driven Digital Marketing</span>
+                  <span class="fac-badge-pill">📈 Global Market Visibility</span>
+                  <span class="fac-badge-pill">💡 Modern Marketing Strategy</span>
+                </div>
+                <p>Namya Kohli is a Computer Science Engineer from NIT Kurukshetra with a strong focus on
+                  <strong>digital marketing, AI tools, and brand positioning</strong> for global markets.
+                </p>
+                <p>Her sessions focus on helping businesses build and position their brand for international buyers,
+                  using modern digital strategies and professional brand identity creation.</p>
+                <div class="fac-stats">
+                  <div class="fac-stat"><strong>AI</strong><span>Digital Tools</span></div>
+                  <div class="fac-stat"><strong>B2B</strong><span>Brand Building</span></div>
+                  <div class="fac-stat"><strong>NIT</strong><span>Kurukshetra</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 5: Mr Andrew -->
+          <div class="mentor-slide">
+            <div class="faculty-card">
+              <div class="faculty-photo-col">
+                <div class="faculty-photo-box">
+                  <div class="faculty-ph">
+                    <div class="ph-icon">👨‍🏫</div>
+                    <p>Mr. Andrew<br>Photo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="faculty-bio-col">
+                <span class="fac-tag">International Business Relations Expert</span>
+                <h2>Mr. <span>Andrew</span></h2>
+                <div class="fac-role">🌏 International Trade Advisor – China</div>
+                <div class="fac-badges">
+                  <span class="fac-badge-pill">🌏 China Market Expertise</span>
+                  <span class="fac-badge-pill">📦 Global Trade Perspective</span>
+                  <span class="fac-badge-pill">🤝 International Buyer Networks</span>
+                  <span class="fac-badge-pill">📈 Market Intelligence &amp; Trade Trends</span>
+                </div>
+                <p>Andrew is an international trade professional based in China, closely connected with Kore
+                  International's global trade network. He brings <strong>on-ground exposure to one of the world's most
+                    active trading markets.</strong></p>
+                <p>He will conduct a <strong>live online session from China</strong>, offering participants a real-world
+                  perspective on how global markets operate.</p>
+                <div class="fac-stats">
+                  <div class="fac-stat"><strong>China</strong><span>Based Expert</span></div>
+                  <div class="fac-stat"><strong>Live</strong><span>Online Session</span></div>
+                  <div class="fac-stat"><strong>Global</strong><span>Buyer Networks</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 6: Mr Rohan Singh -->
+          <div class="mentor-slide">
+            <div class="faculty-card">
+              <div class="faculty-photo-col">
+                <div class="faculty-photo-box">
+                  <div class="faculty-ph">
+                    <div class="ph-icon">👨‍🏫</div>
+                    <p>Mr. Rohan Singh<br>Photo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="faculty-bio-col">
+                <span class="fac-tag">International Marketing Genius</span>
+                <h2>Mr. Rohan <span>Singh</span></h2>
+                <div class="fac-role">🏭 Director – Kore International Pvt. Ltd.</div>
+                <div class="fac-badges">
+                  <span class="fac-badge-pill">🌍 Global Market Strategy</span>
+                  <span class="fac-badge-pill">📦 Export Business Development</span>
+                  <span class="fac-badge-pill">🤝 International Trade Partnerships</span>
+                  <span class="fac-badge-pill">📊 Market Intelligence &amp; Demand Trends</span>
+                </div>
+                <p>Director at Kore International, Mr. Rohan Singh works closely with international buyers, trade
+                  partners, and global market networks, contributing to <strong>export growth, market expansion, and
+                    international trade development.</strong></p>
+                <p>He shares insights on how exporters <strong>identify opportunities, build buyer relationships, and
+                    expand into international markets.</strong></p>
+                <div class="fac-stats">
+                  <div class="fac-stat"><strong>Global</strong><span>Market Strategy</span></div>
+                  <div class="fac-stat"><strong>Export</strong><span>Business Dev.</span></div>
+                  <div class="fac-stat"><strong>Trade</strong><span>Partnerships</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end mentor-slides -->
+
+        <!-- Slider Navigation -->
+        <div class="mentor-nav">
+          <button class="mentor-prev" onclick="mentorMove(-1)">&#8592; Prev</button>
+          <div class="mentor-dot-wrap" id="mentorDots"></div>
+          <button class="mentor-next" onclick="mentorMove(1)">Next &#8594;</button>
+          <span class="mentor-counter" id="mentorCounter">1 / 6</span>
+        </div>
+
+      </div><!-- end mentor-slider-wrap -->
+    </div>
+  </section>
+
+  <!-- CTA FORM -->
+  <section class="cta-sec">
+    <div class="container">
+      <div class="cta-grid">
+        <div class="cta-text fade">
+          <h2>Turn Your <span class="gold">Ambition</span> into a<br><span class="gold">Real Export
+              Business</span></h2>
+          <p>Take the first step toward your international trade career. Our expert team is ready to guide you
+            every
+            step of the way toward your global goals.</p>
+          <ul class="cta-list">
+            <li>Work on Real Time Export Projects</li>
+            <li>Learn Directly from Experienced Exporters &amp; Industry Experts</li>
+            <li>Visit Banks &amp; Understand Real Export Finance Processes</li>
+            <li>Build Industry Connections Through Networking Opportunities</li>
+            <li>Learn How to Attend &amp; Leverage Business Networking Events</li>
+            <li>Understand Export Documentation &amp; Logistics in Practice</li>
+            <li>Internship Opportunities for Real Industry Exposure</li>
+            <li>Mentorship from Experienced Export Professionals</li>
+            <li>Learn Brand Building &amp; Online Credibility for Export Businesses</li>
+            <li>Personalized Strategy to Position Your Export Brand Globally</li>
+          </ul>
+        </div>
+        <div class="cta-form fade">
+          <h3>🌍 Enquire Now</h3>
+          <div class="ff"><input type="text" placeholder="Full Name" id="fname"></div>
+          <div class="ff"><input type="tel" placeholder="Phone Number / WhatsApp Number" id="fphone"></div>
+          <div class="ff"><input type="email" placeholder="Email Address" id="femail"></div>
+          <div class="ff">
+            <select id="fstatus" class="ff-select">
+              <option value="" disabled selected>Current Status</option>
+              <option value="Student">Student</option>
+              <option value="Working Professional">Working Professional</option>
+              <option value="Business Owner">Business Owner</option>
+              <option value="Entrepreneur">Entrepreneur</option>
+              <option value="Looking to Start Export Business">Looking to Start Export Business</option>
+            </select>
+          </div>
+          <div class="ff">
+            <select id="fgoal" class="ff-select">
+              <option value="" disabled selected>What is your main goal?</option>
+              <option value="Start my own export business">Start my own export business</option>
+              <option value="Add exports to my existing business">Add exports to my existing business
+              </option>
+              <option value="Learn export-import for career opportunities">Learn export-import for career
+                opportunities</option>
+              <option value="Explore global trade opportunities">Explore global trade opportunities
+              </option>
+            </select>
+          </div>
+          <button class="fsub" onclick="submitEnq()">Request Information →</button>
+          <p style="color:rgba(255,255,255,.5);font-size:11px;text-align:center;margin-top:10px;line-height:1.5">
+            OUR TEAM WILL GET IN TOUCH TO SCHEDULE YOUR COUNSELLING SHORTLY.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="fb">
+          <!-- <div class="brand"><span class="g">KORE</span> <span class="b">EXIM</span> Academy</div> -->
+          <img src="https://sandybrown-ram-533017.hostingersite.com/wp-content/uploads/2025/11/Untitled-design-31.svg"
+            alt="Kore EXIM Academy Logo" class="logo-img" onerror="this.style.display='none'">
+          <p>KORE EXIM ACADEMY is the sister concern of KORE International Pvt. Ltd., Ahmedabad, Gujarat since
+            2015,
+            certified by ISO 9001. India's leading Export-Import Training Institute.</p>
+          <div class="fcr"><span class="fi">📍</span><span>A-441, Sun Westbank, Ashram Road,<br>Navrangpura,
+              Ahmedabad –
+              380009</span></div>
+          <div class="fcr"><span class="fi">📞</span><a href="tel:+919974541225">+91 99745 41225</a></div>
+          <div class="fcr"><span class="fi">✉</span><a
+              href="https://mail.google.com/mail/?view=cm&to=info@koreeximacademy.com">info@koreeximacademy.com</a>
+          </div>
+          <div class="soc">
+            <a href="https://www.instagram.com/koreeximacademy/" title="Instagram">ig</a>
+            <a href="#" title="Facebook">fb</a>
+            <a href="#" title="LinkedIn">in</a>
+            <a href="#" title="YouTube">yt</a>
+          </div>
+        </div>
+        <div class="fcol">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="exim-hub.html">Exim Hub</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="courses.html#free">Free EXIM Course</a></li>
+            <li><a href="courses.html#basic">Basic EXIM Course</a></li>
+            <li><a href="courses.html#master">Master EXIM Course</a></li>
+            <li><a href="courses.html#consulting">FREE EXIM Consultancy</a></li>
+            <li><a href="exim-hub.html">EXIM Hub Resources</a></li>
+          </ul>
+        </div>
+        <div class="fcol fhours">
+          <h4>Working Hours</h4>
+          <p><span class="day">Monday – Friday</span><br>10:00 AM – 5:00 PM</p>
+          <p style="margin-top:10px"><span class="day">Saturday</span><br>By Appointment Only</p>
+          <a href="https://wa.me/919974541225" class="wa-f">💬 WhatsApp Us</a><br>
+          <a href="https://chat.whatsapp.com/FOsmvFsuJ2XDOztyXA5HIt"
+            style="display:inline-block;margin-top:9px;color:rgba(255,255,255,.5);font-size:12px;text-decoration:none">📢
+            Join WhatsApp Community</a>
+        </div>
+      </div>
+      <div class="fbot">
+        <p>© 2026 Kore Exim Academy. All rights reserved. | Sister concern of KORE International Pvt. Ltd.</p>
+        <p><a href="about.html">About</a> · <a href="courses.html">Courses</a> · <a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919974541225" class="waf" title="WhatsApp">💬</a>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script>
+    /* Mega dropdown positioning */
+    (function () {
+      var hdr = document.querySelector('.navbar');
+      var megaDrop = document.querySelector('.mega-drop');
+      var megaParent = document.querySelector('.mega-parent');
+      if (!hdr || !megaDrop || !megaParent) return;
+      function pos() { megaDrop.style.top = hdr.getBoundingClientRect().bottom + 'px'; }
+      megaParent.addEventListener('mouseenter', pos);
+      window.addEventListener('scroll', function () { if (megaParent.matches(':hover')) pos(); });
+    })();
+
+    /* Hero banner placeholder — hide if image loaded */
+    (function () {
+      var img = document.getElementById('heroBannerImg');
+      var ph = document.getElementById('heroBannerPlaceholder');
+      if (!img || !ph) return;
+      if (img.src && img.src !== window.location.href) {
+        img.onload = function () { ph.style.display = 'none'; img.style.display = 'block'; };
+        img.onerror = function () { img.style.display = 'none'; ph.style.display = 'flex'; };
+      }
+    })();
+
+    /* Faculty photo placeholder */
+    (function () {
+      var img = document.getElementById('facultyPhoto');
+      var ph = document.getElementById('facultyPh');
+      if (!img || !ph) return;
+      if (img.src && img.src !== window.location.href) {
+        img.onload = function () { ph.style.display = 'none'; };
+        img.onerror = function () { img.style.display = 'none'; ph.style.display = 'flex'; };
+      }
+    })();
+
+    /* Student video placeholder — hide when iframe has src */
+    (function () {
+      var iframe = document.getElementById('studentVideo');
+      var ph = document.getElementById('videoPh');
+      if (!iframe || !ph) return;
+      if (iframe.src && iframe.src !== 'about:blank' && iframe.src !== '') {
+        ph.style.display = 'none';
+      }
+    })();
+
+    /* About boxes — show image when src is set, else show placeholder */
+    document.querySelectorAll('.abox').forEach(function (box) {
+      var img = box.querySelector('img');
+      var ph = box.querySelector('.abox-ph');
+      var lbl = box.querySelector('.abox-ph-label');
+      if (!img) return;
+      if (img.src && img.src !== window.location.href) {
+        img.onload = function () {
+          img.style.display = 'block';
+          if (ph) ph.style.display = 'none';
+          if (lbl) lbl.style.display = 'none';
+          box.classList.remove('pulse-box');
+        };
+        img.onerror = function () { img.style.display = 'none'; };
+      }
+    });
+
+    /* Scroll fade */
+    var obs = new IntersectionObserver(function (e) {
+      e.forEach(function (x) { if (x.isIntersecting) x.target.classList.add('in'); });
+    }, { threshold: 0.07 });
+    document.querySelectorAll('.fade').forEach(function (el) { obs.observe(el); });
+
+    /* Counter animation */
+    var counted = false;
+    new IntersectionObserver(function (e) {
+      e.forEach(function (x) {
+        if (x.isIntersecting && !counted) {
+          counted = true;
+          document.querySelectorAll('.counter').forEach(function (el) {
+            var t = parseInt(el.dataset.target), d = 2000, s = t / (d / 16), c = 0;
+            var tm = setInterval(function () {
+              c += s;
+              if (c >= t) { el.textContent = t.toLocaleString() + ''; clearInterval(tm); }
+              else { el.textContent = Math.floor(c).toLocaleString() + ''; }
+            }, 16);
+          });
+        }
+      });
+    }, { threshold: 0.3 }).observe(document.querySelector('.stats-sec'));
+
+    /* Show more table */
+    function toggleMore() {
+      var r = document.getElementById('moreRows'), b = document.getElementById('smBtn');
+      r.classList.toggle('show');
+      b.textContent = r.classList.contains('show') ? 'Show Less ▲' : 'Show More Features ▼';
+    }
+
+    /* Enquiry form */
+    function submitEnq() {
+      var n = document.getElementById('fname').value.trim();
+      var p = document.getElementById('fphone').value.trim();
+      var e = document.getElementById('femail').value.trim();
+      var s = document.getElementById('fstatus') ? document.getElementById('fstatus').value : '';
+      var g = document.getElementById('fgoal') ? document.getElementById('fgoal').value : '';
+      if (!n || !p || !e) { alert('Please fill all fields.'); return; }
+      var msg = 'Hello KORE EXIM Academy,\n\nName: ' + n + '\nPhone: ' + p + '\nEmail: ' + e;
+      if (s) msg += '\nStatus: ' + s;
+      if (g) msg += '\nGoal: ' + g;
+      msg += '\n\nI am interested in your courses. Please contact me.';
+      window.open('https://wa.me/919974541225?text=' + encodeURIComponent(msg), '_blank');
+    }
+
+
+
+
+
+    /* ── Mentor Slider ── */
+    (function () {
+      var slides = document.querySelectorAll('.mentor-slide');
+      var dotsWrap = document.getElementById('mentorDots');
+      var counter = document.getElementById('mentorCounter');
+      var current = 0;
+      var total = slides.length;
+
+      // Dots banao
+      slides.forEach(function (_, i) {
+        var d = document.createElement('button');
+        d.className = 'mentor-dot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', 'Slide ' + (i + 1));
+        d.onclick = function () { goTo(i); };
+        dotsWrap.appendChild(d);
+      });
+
+      function goTo(n) {
+        slides[current].classList.remove('active');
+        document.querySelectorAll('.mentor-dot')[current].classList.remove('active');
+        current = (n + total) % total;
+        slides[current].classList.add('active');
+        document.querySelectorAll('.mentor-dot')[current].classList.add('active');
+        if (counter) counter.textContent = (current + 1) + ' / ' + total;
+      }
+
+      window.mentorMove = function (dir) { goTo(current + dir); };
+    })();
+  </script>
+</body>
+
+</html>
